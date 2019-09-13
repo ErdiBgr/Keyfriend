@@ -33,7 +33,7 @@ class Keyfriend{
 	public function ask($q,$limit=20)
 	{
 		$q = $this->control($q);
-		$ch = curl_init("https://amg-ss.ask.com/query?limit=20&q=$q");
+		$ch = curl_init("https://amg-ss.ask.com/query?limit=$limit&q=$q");
 		curl_setopt_array($ch,[CURLOPT_RETURNTRANSFER => True,CURLOPT_SSL_VERIFYPEER => False]);
 		$results = curl_exec($ch);
 		curl_close($ch);
