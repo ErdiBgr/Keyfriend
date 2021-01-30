@@ -4,16 +4,16 @@
 
 # Keyfriend sınıfının kullanımı
 ><b>Öncellikle Keyfriend sınıfımızı başlatıyoruz</b><br>
-```
+```php
 $kf = new Keyfriend;
 ```
 ><b>Daha sonra keyword listesi oluşturacağımız arama motorunu ve bize hangi formatta döneceğini seçiyoruz.</b><br>
-```
+```php
 $sorgu = $kf->yaani("Github")->ARR();
 print_r($sorgu);
 ```
 ><b>Çıktı aşağıdaki gibi olacaktır.</b><br>
-```
+```php
 Array
 (
     [search] => github
@@ -39,16 +39,16 @@ Array
 ```
 # Use of the Keyfriend class
 ><b>We're starting Keyfriend class first.</b><br>
-```
+```php
 $kf = new Keyfriend;
 ```
 ><b>Then select the search engine to create a keyword list and we choose the return format.</b><br>
-```
+```php
 $query = $kf->google("Github","en")->ARR();
 print_r($query);
 ```
 ><b>The output will be as follows.</b><br>
-```
+```php
 
 Array
 (
